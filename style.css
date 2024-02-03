@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: 1;
+    background-color: #222;
+    
+}
+
+.material-symbols-outlined {
+    padding-bottom: 5rem;
+    color: darkred;
+}
+
+#sign {
+    padding-bottom: 2.5rem;
+    width: 70%;
+}
+
+input:focus {
+    outline: none;
+}
+
+#sign input {
+    margin-bottom: .8rem;
+    margin-top: .5rem;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: #222;
+    border: #555 solid 1px;
+    color: white;
+}
+
+.pri-btn {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #044702;
+    border: none;
+    padding: .6em 0;
+    transition: all .5s;
+    font-weight: bold;
+}
+
+.pri-btn:hover {
+    background-color: #0c4f0b;
+    cursor: pointer;
+}
+
+.suc-btn {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: solid 1px lightgray;
+    padding: .6em 0;
+    transition: all .5s;
+    font-weight: bold;
+}
+
+.suc-btn:hover {
+    color: #0c4f0b;
+    border: solid 1px #0c4f0b;
+    cursor: pointer;
+}
+
+#sign label {
+    margin-bottom: 1rem;
+}
+
+#links {
+    text-align: center;
+    width: 50%;
+}
+
+#links>a {
+    display: block;
+    padding-bottom: .5rem;
+    text-decoration: none;
+    color: white;
+}
+
+#links>a:hover {
+    text-decoration: underline;
+}
+
+#or {
+    display: flex;
+    padding-bottom: .5rem;
+}
+
+#or hr {
+    width: 100%;
+}
+
+#or span {
+    padding: 0 5px;
+}
+
+footer {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+footer>a {
+    color: #0c4f0b;
+    text-decoration: none;
+}
+
+#right {
+    flex: 1;
+    height: 100vh;
+    background-image: url("img/calm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#right>div {
+    font-size: 2em;
+    padding-bottom: 1rem;
+}
+
+#right>.suc-btn {
+    width: 200px;
+}
+
+@media (min-width: 1200px) {
+    #left {
+        flex: 4;
+    }
+    #right{
+        flex: 6;
+    }
+}
+
+@media (max-width: 768px) {
+    #right {
+        display: none;
+    }
+}
