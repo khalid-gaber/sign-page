@@ -128,7 +128,7 @@ footer>a {
 #right {
     flex: 1;
     height: 100vh;
-    background-image: url("img/calm.jpg");
+    background-image: url("img/calm.webp");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
